@@ -1,11 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
-</html>
+  <!-- Google Font (proche du template) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="./../assets/css/style.css">
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <div class="nav-container">
+
+    
+    <!-- Menu -->
+     
+    <nav class="nav-links" id="navLinks">
+      <a href="home.html" >Home</a>
+      <a href="About.html">About</a>
+      <a href="Resume.html">Resume</a>
+      <a href="Services.html">Services</a>
+      <a href="Portfolio.html">Portfolio</a>
+      <div class="dropdown">
+  <button class="dropbtn">
+    Dropdown <i class="fa-solid fa-chevron-down"></i>
+  </button>
+
+  <div class="dropdown-content">
+    <a href="#">Dropdown1</a>
+    <a href="#">Dropdown2</a>
+    <a href="#">Dropdown3</a>
+    <a href="#">Dropdown4</a>
+    <a href="#">Dropdown5</a>
+  </div>
+</div>
+      <a href="Contact.html">Contact</a>
+    </nav>
+      <!-- Social icons -->
+      <div class="nav-socials">
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    
+
+    <!-- Burger -->
+    <div class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </div>
+</header>
+
+<div class="overlay" id="overlay"></div>
+
+<script src="./../assets/js/navbar.js"></script>

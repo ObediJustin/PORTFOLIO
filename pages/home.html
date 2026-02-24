@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
+    <div id="navbar-container"></div>
     
+    <main>
+        <h1>Home(pour tester les links de la navbar)</h1>
+    </main>
+
+    <script>
+        // Charger la navbar
+        fetch("../mini/navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar-container").innerHTML = data;
+                
+                // Déclencher un événement personnalisé quand la navbar est chargée
+                const event = new CustomEvent('navbarLoaded');
+                document.dispatchEvent(event);
+            })
+            .catch(error => {
+                console.error("Error loading navbar:", error);
+            });
+    </script>
+
+    <!-- Charger navbar.js APRÈS avoir injecté la navbar -->
+    <script src="../assets/js/navbar.js"></script>
 </body>
 </html>
